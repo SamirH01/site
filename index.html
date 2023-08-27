@@ -1,0 +1,254 @@
+<!--Validator and Jigsaw for feedback-->
+<!DOCTYPE html> <!--This is a doctype declaration-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="HeatOnFeet is the ultimate destination for sneaker enthusiasts and
+        sneaker lovers. Our inventory consists of rare and exclusive sneakers that you won't find anywhere else. 
+        We make sure you're one step ahead of the game!">
+        <title>
+            HeatOnFeet
+        </title>
+        <style>
+            body{
+                background-color: black;
+                margin: 0;
+                padding: 0;
+            }
+
+            p.username{
+                margin-top: 500px;
+                color: white;
+            }
+            p.text{
+                text-align: center;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        
+            img.logo {
+                width: 150px;
+                position: absolute;
+                left: 526px;
+                top:15px;
+            }
+            img.instalogo{
+                width: 20px;
+                position: absolute;
+                top: 15px;
+                left: 27px;
+            }
+            img.tiktoklogo{
+                width: 18px;
+                position: absolute;
+                top: 16px;
+                left: 62px;
+            }
+            
+            img.cart{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                right: 50px;
+                top: 35px;
+            }
+            img.heart{
+                width: 26px;
+                height: 22px;
+                position: absolute;
+                right: 100px;
+                top: 40px;
+            }
+            p.description {
+                font-weight: bold;
+            }
+            a.aboutus1{
+                color : white;
+                position: absolute;
+                right: 130px;
+                font-size: small;
+                margin-top: 5px;
+
+            }
+            a.aboutus2{
+                color : white;
+                position: absolute;
+                right: 74px;
+                font-size: small;
+                margin-top: 5px;
+            }
+            a.aboutus3{
+                color : white;
+                position: absolute;
+                right: 29px;
+                font-size: small;
+                margin-top: 5px;
+            }
+            a.header{
+                color: white;
+            }
+            nav.overnav{
+                width: 100%;
+                overflow: hidden;
+                height: 50px;
+                background-color: #746ab0;
+                position:absolute;
+                top: 0;
+                left: 0;
+                }
+        
+            nav.mainnav{
+                width: 100%;
+                overflow: hidden;
+                margin-top: 50px;
+                position: sticky;
+                top: 0;
+                height: 100px;
+                background-color: white;
+                padding: 20px;
+                box-sizing: border-box;
+                left: 0;
+                right:0;
+            }
+            ul{
+                list-style: none;
+                display: flex;
+            }
+            li{
+                position: relative;
+                padding: 10px 25px;
+                left: -27px;
+            }
+            li a{
+                width: 50px;
+                padding: 20px;
+                font-family: Arial;
+                color:black;
+                text-decoration: none;
+                }
+
+                /* Add the underline effect */
+                li a::before {
+                content: "";
+                position: absolute;
+                bottom: 5px; /* Adjust the distance of the underline from the text */
+                left: 13px;
+                width: 80%; /* Make the underline span the full width of the parent element */
+                height: 2px;
+                background-color: #000; /* Set the color of the underline (optional) */
+                transform: scaleX(0); /* Start with no width (scaleX(0)) */
+                transform-origin: left; /* Set the transform origin to the left */
+                transition: transform 0.3s; /* Transition for the transform property */
+                }
+
+                /* Apply the underline animation on hover */
+                li a:hover::before {
+                transform: scaleX(1); /* Expand the underline to match the width of the parent element (scaleX(1)) */
+                }
+                
+                div.container{
+                    position: absolute;
+                    width: 20%;
+                    min-height: 75px;
+                    padding: 1%;
+                    display: flex;
+                    right:200px;
+                    top: 0;
+
+                }
+                form.searchbar{
+                    width:226px;
+                    background: white;
+                    display: flex;
+                    border-radius: 50px;
+                    padding: 10px 20px;
+                    position: absolute;
+                    top:28px;
+                    border: 2px solid black;
+                }
+                form.searchbar input{
+                    background: transparent;
+                    flex: 1;
+                    border: 0;
+                    outline: none;
+                    padding: 6px 5px;
+                    font-size: 15px;
+                    color: black;
+                }
+                ::placeholder{
+                    color:black;
+                }
+                form.searchbar img{
+                    width: 25px;
+                }
+                form.searchbar button{
+                    border: 0;
+                    border-radius: 50%;
+                    width: 34px;
+                    height: 28px;
+                    background: white;
+                    cursor: pointer;
+                }
+
+        </style> 
+        <body>
+            <nav class="overnav">
+                <a class ="aboutus1" href="#">
+                    Om oss
+                </a>
+                <a class ="aboutus2" href="#">
+                    Kontakt
+                </a>
+                <a class ="aboutus3" href="#">
+                    Policy
+                </a>
+                <p class="text">
+                    Fri frakt på order över 4999kr
+                </p>
+                <p class="text">
+                    Spana in våra senaste skor <a class="header" href="#"> här! </a>
+                </p>
+                <p class="text">
+                    Se vår bästsäljande skor <a class="header" href="#" > här. </a>
+                </p> 
+                <a href="http://www.instagram.com/heatonfeet040/">
+                    <img class= instalogo src="images/instalogo.png" alt="instagram logo"/>
+                </a>
+                <a href="https://www.tiktok.com/@heatonfeet040">
+                    <img class= tiktoklogo src="images/tiktoklogo.png" alt="tiktok logo"/>
+                </a>
+            </nav>
+            <nav class="mainnav">
+                <div class="container">
+                <form action="" class="searchbar">
+                    <input type="text" placeholder="Search..." name="q">
+                    <button type="submit"><img src="images/search.png" alt="search"></button>
+                </form>
+                </div>
+                <ul>
+                        <img class="heart" src="images/heart.png" alt="favoriter">
+                        <img class="cart" src="images/cart.png" alt="shopping cart">
+                        <img class="logo" src="images/Logo.png" alt="HeatOnFeet logo"/>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Sneakers</a>
+                    </li>
+                    <li>
+                        <a href="#">Tillbehör</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="username"> 
+                @HeatOnFeet040
+            </p>
+            <p class="description">
+                Köp och sälj sneakers!
+            </p>
+            <script src="script.js">
+            </script>
+        </body>
+    </head>
+</html>
